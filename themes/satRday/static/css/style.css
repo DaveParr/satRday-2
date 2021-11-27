@@ -1,0 +1,20 @@
+.jumbotron {
+    background-image: url(../img/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.display-1 {
+    margin: 10px;
+    padding: 3px; 
+    display: inline-block; 
+    background: rgba(43,77,147,.9);
+}
+
+.display-3 {
+    margin: 10px;
+    padding: 3px; 
+    display: inline-block; 
+    background: rgba(43,77,147,.9);
+}

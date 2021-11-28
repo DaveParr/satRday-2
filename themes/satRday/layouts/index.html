@@ -1,13 +1,3 @@
 {{ define "main" }}
-<div id="home-jumbotron" class="jumbotron">
 
-    <h1 class="display-1 text-white">
-        {{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}</h1>
-    <h5 class="display-5 text-white">
-        {{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</h5>
-    <div class="col-md-12 text-center"><a href="#services" class="page-scroll btn btn-primary">{{ with
-            .Site.Params.hero.buttonText }}{{ . }}{{ end
-            }}</a>
-    </div>
-</div>
 {{ end }}

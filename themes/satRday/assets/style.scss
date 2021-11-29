@@ -1,3 +1,9 @@
+:root {
+    --satRday-blue: hsl(220, 55%, 37%);
+    --satRday-blue-90: hsla(220, 55%, 37%, 0.9);
+    --satRday-yellow: hsl(46, 99%, 60%);
+}
+
 .jumbotron {
     background-image: url(../img/header-bg.jpg);
     background-position: center;
@@ -5,16 +11,14 @@
     background-repeat: no-repeat;
 }
 
-.display-1 {
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
     margin: 1rem;
     padding: 0.1rem; 
     display: inline-block; 
-    background: rgba(43,77,147,.9);
+    background: var(--satRday-blue-90);
 }
 
-.display-5 {
-    margin: 1rem;
-    padding: 0.1rem; 
-    display: inline-block; 
-    background: rgba(43,77,147,.9);
+.btn-primary {
+    border-color: var(--satRday-blue);
+    background-color: var(--satRday-blue);
 }

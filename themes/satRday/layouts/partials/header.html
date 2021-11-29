@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="/img/logo-hex.png" height="40px"></a>
+    <a class="navbar-brand" href="{{ if .IsHome }}/#page-top{{ else }}{{ .Site.BaseURL }}{{ end }}" aria-label="Go back to the top of the page">
+      <img src="/img/logo-hex.png" aria-label="satRday hex logo in blue" height="40px">
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -34,7 +36,7 @@
 
   <h5 class="display-5 text-white border-bottom border-5">
       {{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</h5>
-  <div class="col-md-12 text-center"><a href="#services" class="page-scroll btn btn-primary">{{ with
+  <div class="col-md-12 text-center p-3"><a href="#services" class="page-scroll btn btn-primary">{{ with
           .Site.Params.hero.buttonText }}{{ . }}{{ end
           }}</a>
   </div>

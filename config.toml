@@ -1,7 +1,7 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'satRday'
-theme= 'satRday'
+theme = 'satRday'
 
 [params.hero]
     # To change the background image of the hero, replace 'header-bg.jpg' in
@@ -9,7 +9,7 @@ theme= 'satRday'
     title = "satRday [My City]"
     subtitle = "A conference for users of the R Language on [Conference Date]"
     bg = true
-    buttonText = "Tell me more"
+    buttonText = "Get my ticket"
 
 [params.services]
     enable = true
